@@ -276,7 +276,7 @@ along with a CI service (in Jenkins) hosted that will run unit and end to end te
 
 ## Contact
 
-For more information on AngularJS please check out http://angularjs.org/
+For more information contact with joseanmp@gmail.com
 
 [git]: http://git-scm.com/
 [bower]: http://bower.io
