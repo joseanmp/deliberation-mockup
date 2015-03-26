@@ -1,8 +1,8 @@
 {
-  "name": "angular-phonecat",
-  "description": "A starter project for AngularJS",
+  "name": "angular-deliberationMockup",
+  "description": "A mockup of AppCivist module, deliberation",
   "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-phonecat",
+  "homepage": "https://github.com/joseanmp/deliberation-mockup",
   "license": "MIT",
   "private": true,
   "dependencies": {

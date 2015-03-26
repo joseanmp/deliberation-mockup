@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="deliberationApp">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,69 +9,22 @@
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
 
 </head>
-<body>
+<body ng-controller="Ctrl">
 
   <div class="container">
       <div class="header clearfix">
           <h3 class="text-muted">Deliberation Mockup</h3>
       </div>
-      <section class="row proposal">
-          <div class="col-md-12">
-              <h2>Proposal number 1</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div ng-switch on="getUrl()">
+          <div ng-switch-when="/deliberation">
+              <div ng-include="'partials/proposal/proposal.html'"></div>
           </div>
-      </section>
-      <section class="row comments">
-          <div class="col-md-12">
-              <ul class="comment">
-                  <li class="row">
-                      <div class="image-profile-comment col-md-1"></div>
-                      <div class="col-md-11 text-comment">
-                          <h5 class="text-muted">User: </h5>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                          <p class="date-comment"><time datetime="2015-03-19">2015-03-19 16:35</p>
-                      </div>
-                  </li>
-                  <li class="row">
-                      <div class="image-profile-comment col-md-1"></div>
-                      <div class="col-md-11 text-comment">
-                          <h5 class="text-muted">User: </h5>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      </div>
-                  </li>
-                  <li class="row">
-                      <div class="image-profile-comment col-md-1"></div>
-                      <div class="col-md-11 text-comment">
-                          <h5 class="text-muted">User: </h5>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      </div>
-                  </li>
-                  <li class="row">
-                      <div class="image-profile-comment col-md-1"></div>
-                      <div class="col-md-11 text-comment">
-                          <h5 class="text-muted">User: </h5>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      </div>
-                  </li>
-                  <li class="row">
-                      <div class="image-profile-comment col-md-1"></div>
-                      <div class="col-md-11 text-comment">
-                          <h5 class="text-muted">User: </h5>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      </div>
-                  </li>
-                  <li class="row">
-                      <div class="image-profile-comment col-md-1"></div>
-                      <div class="col-md-11 text-comment">
-                          <h5 class="text-muted">User: </h5>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      </div>
-                  </li>
-              </ul>
-          </div>
-      </section>
+      </div>
+      <div ng-view></div>
   </div>
 
 </body>
