@@ -43,7 +43,7 @@ module.exports = function(grunt) {
 
     // Server tasks
     grunt.registerTask('server', ['connect','clean']);
-    
+
 
 
 };
