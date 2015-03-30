@@ -6,10 +6,10 @@ This project is a mockup of the module Deliberation from AppCivist project.
 
 You have to install the following resources,
 
-[npm]: https://www.npmjs.org/
-[bower]: http://bower.io
-compass
-sass
+https://www.npmjs.org/
+http://bower.io
+http://compass-style.org
+http://sass-lang.com
 
 ## Run
 
