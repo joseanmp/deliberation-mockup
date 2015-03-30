@@ -16,7 +16,7 @@ http://sass-lang.com
 
 ## Run
 
-If you are using a linux based system, tu must to place in the directory on a shell and type 'npm start'
+If you are using a linux based system, you must place in the directory type ' npm start' on a shell
 
 ## Contact
 
