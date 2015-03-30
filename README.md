@@ -18,6 +18,10 @@ http://sass-lang.com
 
 If you are using a linux based system, you must place in the directory type ' npm start' on a shell
 
+If you have problems maybe you can configure your git with this:
+<br/>
+git config --global url."https://".insteadOf git://
+
 ## Contact
 
 For more information contact with joseanmp@gmail.com
